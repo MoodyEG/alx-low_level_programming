@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * time to test
- * this function prints out that
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
