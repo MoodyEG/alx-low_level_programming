@@ -1,5 +1,9 @@
 #include <stdio.h>
-int main(void) /**time to test*/
+/**
+ * time to test
+ * this function prints out that
+ */
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 
