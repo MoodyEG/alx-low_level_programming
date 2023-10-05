@@ -11,9 +11,9 @@ int main(void)
 	int i = sizeof(long int);
 	int j = sizeof(long long);
 	int k = sizeof(float);
-	printf("Size of a char: %d byte(s)\nSize of an int: %d byte(s)\n", a, b,);
-	printf("Size of a long int: %d byte(s)\nSize of an long long: %d byte(s)\n", j, k,);
-	printf("Size of a float: %d byte(s)\n", l);
+	printf("Size of a char: %d byte(s)\nSize of an int: %d byte(s)\n", a, b);
+	printf("Size of a long int: %d byte(s)\nSize of an long long: %d byte(s)\n", i, j);
+	printf("Size of a float: %d byte(s)\n", k);
 
 	return (0);
 }
