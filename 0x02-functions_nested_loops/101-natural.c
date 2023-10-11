@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_to_1024 - Prints all natural numbers from n to 98.
- * @n: The starting number.
+ * main - Prints all natural numbers from n to 98.
+ * Return: always 0
  */
-void print_to_1024(int n)
+int main(void)
 {
 	int a;
+	int n;
 
 	a = 0;
 	for (n = 0; n < 1024; n++)
@@ -22,4 +23,6 @@ void print_to_1024(int n)
 		}
 	}	
 	printf("%d\n", a);
+
+	return (0);
 }
