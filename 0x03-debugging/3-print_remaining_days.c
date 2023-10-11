@@ -12,6 +12,10 @@
 
 void print_remaining_days(int month, int day, int year)
 {
+	if (year < 0)
+		{
+			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+		}
 	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
 	{
 		if (month >= 2 && day >= 60)
@@ -24,27 +28,7 @@ void print_remaining_days(int month, int day, int year)
 	}
 	else
 	{
-		if ((month == 2 && day > 59) || (month == 3 && day > 90))
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-		else if ((month == 4 && day > 120) || (month == 5 && day > 151))
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-		else if ((month == 6 && day > 181) || (month == 7 && day > 212))
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-		else if ((month == 8 && day > 243) || (month == 9 && day > 273))
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-		else if ((month == 10 && day > 304) || (month == 11 && day > 334))
-		{
-			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-		}
-		else if (month == 12 && day > 365)
+		if (month == 2 && day == 60)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
 		}
