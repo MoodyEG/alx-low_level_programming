@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
+	long a = 1;
+	long b = 2;
 	int n;
 
 	printf("1, 2");
@@ -17,12 +17,12 @@ int main(void)
 		if (n % 2 == 0)
 		{
 			a = a + b;
-			printf(", %d", a);
+			printf(", %ld", a);
 		}
 		else
 		{
 			b = a + b;
-			printf(", %d", b);
+			printf(", %ld", b);
 		}
 	}
 	printf("\n");
