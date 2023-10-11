@@ -5,10 +5,9 @@
  *
  * Return: The value of the last digit.
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
 	int a;
-	int n;
 
 	if (n < 0)
 	{
