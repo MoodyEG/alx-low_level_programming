@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * print_times_table - prints the 9 times table, starting with 0.
- * 
- * @n: our int
+ *@n: our int
  */
 void print_times_table(int n)
 {
@@ -27,24 +26,24 @@ void print_times_table(int n)
 
 					if (a < 100)
 					{
-						if (a < 10)
-							{
-								_putchar(' ');
-								_putchar(' ');
-								_putchar(a % 10 + '0');
-							}
-						else
-							{
-							_putchar(' ');
-							_putchar(a / 10 + '0');
-							_putchar(a % 10 + '0');
-							}
+					if (a < 10)
+					{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(a % 10 + '0');
 					}
 					else
 					{
-						_putchar(a / 100 + '0');
-						_putchar(a / 10 + '0');
-						_putchar(a % 10 + '0');
+					_putchar(' ');
+					_putchar(a / 10 + '0');
+					_putchar(a % 10 + '0');
+					}
+					}
+					else
+					{
+					_putchar(a / 100 + '0');
+					_putchar((a / 10) % 10 + '0');
+					_putchar(a % 10 + '0');
 					}
 				}
 			}
