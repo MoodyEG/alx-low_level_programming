@@ -22,7 +22,7 @@ int main(void)
 		b = i;
 		}
 		else
-		{ 
+		{
 			if (case2) /*once it reaches the limit VVVV */
 			{ /*we simply try to devide the number into 2*/
 				a1 = a % 1000000000;
