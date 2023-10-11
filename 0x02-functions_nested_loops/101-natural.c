@@ -12,11 +12,11 @@ void print_to_1024(int n)
 	a = 0;
 	for (n = 0; n < 1024; n++)
 	{
-		if ((n / 3) % == 0)
+		if ((n / 3) % 10 == 0)
 		{
 			a = a + n;
 		}
-		else if ((n / 5) % == 0)
+		else if ((n / 5) % 10 == 0)
 		{
 			a = a + n;
 		}
