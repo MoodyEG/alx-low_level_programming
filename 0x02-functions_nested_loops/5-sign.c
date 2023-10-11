@@ -6,6 +6,7 @@
  * Return: 1 if n is greater than zero, 0 if zero, -1 if less than zero
  */
 int print_sign(int n)
+{
 	if (n > 0)
 	{
 		_putchar('+');
@@ -21,3 +22,6 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
+
+	return (0);
+}
