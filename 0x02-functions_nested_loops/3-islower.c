@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _islower - check the code
- * @c: our in
+ * @c: our int
  *
- * Return 1 if c is lowercase
- * Return 0 otherwise
+ * Return: 1 if c is lowercase
+ * Return: 0 otherwise
  */
 int _islower(int c)
 {
