@@ -8,18 +8,13 @@
 int print_last_digit(int n)
 {
 	int a;
-	int INT_MIN = –2147483648
 
-	if (n == INT_MIN)
-	{
-	a = 8; /* sine the checker doesn't let it go*/
-	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		n = -n;
 	}
 	a = n % 10;
-	_putchar('0' + a);
+	_putchar(a + '0');
 
 	return (a);
 }
