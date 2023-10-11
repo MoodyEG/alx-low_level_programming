@@ -8,6 +8,7 @@
 int print_last_digit(int n)
 {
 	int a;
+	int INT_MIN = –2147483648
 
 	if (n == INT_MIN)
 	{
