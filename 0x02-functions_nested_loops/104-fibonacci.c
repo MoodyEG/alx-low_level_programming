@@ -12,7 +12,7 @@ int main(void)
 
 	case1 = case2 = 1;
 	printf("1, 2");
-	for (c = 2; c < 98; n++)
+	for (c = 2; c < 98; c++)
 	{
 		if (case1)
 		{
