@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	long a = 1;
-	long b = 2;
+	unsigned long a = 1;
+	unsigned long b = 2;
 	int n;
 
 	printf("1, 2");
@@ -17,12 +17,12 @@ int main(void)
 		if (n % 2 == 0)
 		{
 			a = a + b;
-			printf(", %ld", a);
+			printf(", %lu", a);
 		}
 		else
 		{
 			b = a + b;
-			printf(", %ld", b);
+			printf(", %lu", b);
 		}
 	}
 	printf("\n");
