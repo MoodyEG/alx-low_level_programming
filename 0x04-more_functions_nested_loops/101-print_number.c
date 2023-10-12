@@ -4,6 +4,7 @@
 /**
  * print_number - prints a number
  * @n: our int
+ *
  */
 void print_number(int n)
 {
@@ -25,6 +26,8 @@ void print_number(int n)
 		b = b / 10;
 		c = c * 10;
 	}
-	for (;c >= 1; c = c / 10)
+	for (;c >= 1; c = (c / 10))
+	{
 		_putchar(((a / c) % 10) + '0');
+	}
 }
