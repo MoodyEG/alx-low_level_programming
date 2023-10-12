@@ -13,9 +13,9 @@ int main(void)
 	a = 612852475143;
 	for (b = 2; b < a; b++)
 	{
-		if (n % b == 0)
+		if (a % b == 0)
 		{
-			n = n / b;
+			a = a / b;
 			b--;
 		}
 	}
