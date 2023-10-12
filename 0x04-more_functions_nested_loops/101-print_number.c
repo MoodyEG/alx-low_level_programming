@@ -9,11 +9,11 @@ void print_number(int n)
 {
 	int a, b, c, d, e;
 
-	e = 0
+	e = 0;
 	if (n < 0)
 	{
-		n = -n
-		e = 1
+		n = -n;
+		e = 1;
 	}
 	a = n % 10;
 	b = (n / 10) % 10;
@@ -33,5 +33,4 @@ void print_number(int n)
 	if (b > 0 || c > 0 || d > 0)
 	_putchar(b + '0');
 	_putchar(a + '0');
-	_putchar('\n');
 }
