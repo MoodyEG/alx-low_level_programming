@@ -6,8 +6,8 @@
 void more_numbers(void)
 {
 	int a, b, c1, c2;
+	
 	c2 = 0;
-
 	for (b = 0; b < 10; b++)
 	{
 		c1 = 1;
@@ -23,7 +23,7 @@ void more_numbers(void)
 				if (a == 9)
 				{
 					c2 = 1;
-					a = 0;
+					a = -1;
 				}
 				if (a == 4 && c2 == 1)
 				{
