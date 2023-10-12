@@ -3,7 +3,8 @@
 
 /**
  * main - our main entry
- * Retrun: Always 0 success
+ *
+ * Return: Always 0 success
  */
 int main(void)
 {
@@ -27,9 +28,10 @@ int main(void)
 		}
 		else
 		{
-			printf(" %d", a);	
+			printf(" %d", a);
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
