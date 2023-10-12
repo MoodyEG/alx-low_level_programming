@@ -4,7 +4,7 @@
 /**
  * main - our main entry
  *
- * Retrun: Always 0 success
+ * Return: Always 0 success
  */
 int main(void)
 {
