@@ -3,7 +3,7 @@
  * _isdigit - check the numbers
  * @c: our main int
  * 
- * Return: Returns 1 if c is uppercase, Returns 0 otherwise
+ * Return: Returns 1 if c is a number, Returns 0 otherwise
  */
 int _isdigit(int c)
 {
