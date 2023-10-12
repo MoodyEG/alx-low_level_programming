@@ -7,30 +7,23 @@
  */
 void print_number(int n)
 {
-	int a, b, c, d, e;
+	int a, b, c;
 
-	e = 0;
 	if (n < 0)
 	{
-		n = -n;
-		e = 1;
+		a = -n;
 	}
-	a = n % 10;
-	b = (n / 10) % 10;
-	c = (n / 100) % 10;
-	d = (n / 1000) % 10;
-	if (e)
+	else
 	{
-		_putchar('-');
-		e = 0;
+		a = n;
 	}
-	if (d > 0)
+	b = a;
+	c = 1
+	while (b > 9)
 	{
-		_putchar(d + '0');
+		b = b / 10;
+		c = c * 10;
 	}
-	if (c > 0 || d > 0)
-	_putchar(c + '0');
-	if (b > 0 || c > 0 || d > 0)
-	_putchar(b + '0');
-	_putchar(a + '0');
+	for (;c >= 1; c = c / 10)
+		_putchar(((m / c) % 10) + '0');
 }
