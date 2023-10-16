@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - a function that prints a string, followed by a new line, to stdout
+ * _puts - a function that prints a string, followed by a new line, to stdout
  * @str: pointer to our char
  * Return: no return
  */
@@ -11,7 +11,8 @@ void _puts(char *str)
 
 	while (*(str + a) != '\0')
 	{
-	_putchar(str[a]);
+		_putchar(str[a]);
 		a++;
 	}
+	_putchar('\n');
 }
