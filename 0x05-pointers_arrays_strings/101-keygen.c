@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	printf("24\n")
+	printf("24\n");
 
 	return (0);
 }
