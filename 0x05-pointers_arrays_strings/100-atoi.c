@@ -20,7 +20,7 @@ int _atoi(char *s)
 		if (s[b] >= '0' && s[b] <= '9')
 		{
 			s[b] = s[b] * a;
-			_putchar(s[b]);
+			return (s[b]);
 			c = 0;
 		}
 	}
