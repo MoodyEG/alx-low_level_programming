@@ -26,6 +26,6 @@ int _atoi(char *s)
 	}
 	if (c)
 	{
-		return (0)
+		return (0);
 	}
 }
