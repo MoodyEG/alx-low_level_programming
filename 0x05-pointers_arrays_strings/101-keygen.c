@@ -15,11 +15,11 @@ int main(void)
 	srand(time(0));
 	while (a < (2772 - 128))
 	{
-		b = rand() % 128;
+		b = (rand() % 97) + 31;
 		a = a + b;
 		printf("%c", b);
 	}
-	printf("%c\n", (2772 -a));
+	printf("%c\n", (2772 - a));
 
 	return (0);
 }
