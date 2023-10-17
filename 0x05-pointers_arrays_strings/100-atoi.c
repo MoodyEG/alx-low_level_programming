@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int c = 0; /*in case there are no numbers*/
 	int d = 0; /*will make the numbers x 10*/
 	int e = 0; /*our final number*/
-	
+
 	for (b = 0; s[b] != '\0'; b++)
 	{
 		if (s[b] == '-')
@@ -26,7 +26,7 @@ int _atoi(char *s)
 				e = e + d;
 				e = e * 10;
 			}
-			d = s[b];
+			d = s[b] - 48;
 			c = 1;
 		}
 	}
