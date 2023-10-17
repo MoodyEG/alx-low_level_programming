@@ -10,8 +10,9 @@ int _atoi(char *s)
 	unsigned int b;
 	int a = 1; /*for the sign*/
 	int c = 0; /*in case there are no numbers*/
-	int d = e = 0; /*will make the numbers x 10*/
-
+	int d = 0; /*will make the numbers x 10*/
+	int e = 0; /*our final number*/
+	
 	for (b = 0; s[b] != '\0'; b++)
 	{
 		if (s[b] == '-')
@@ -20,7 +21,7 @@ int _atoi(char *s)
 		}
 		if (s[b] >= '0' && s[b] <= '9')
 		{
-			if (c = 1)
+			if (c == 1)
 			{
 				e = e + d;
 				e = e * 10;
