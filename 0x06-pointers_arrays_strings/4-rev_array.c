@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcmp - reverses the content of an array of integers
+ * reverse_array - reverses the content of an array of integers
  * @a: our pointer to int
  * @n: our int
  * Return: no return
