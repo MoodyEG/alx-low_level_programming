@@ -11,6 +11,7 @@ char *leet(char *str)
 	char c[] = "aeotl";
 	char d[] = "AEOTL";
 	int b;
+	char *z = str;
 
 	while (*str)
 	{
@@ -24,5 +25,5 @@ char *leet(char *str)
 		str++;
 	}
 
-	return (str);
+	return (z);
 }
