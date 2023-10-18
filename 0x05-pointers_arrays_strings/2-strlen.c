@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * *cap_string - capitalizes all words of a string
+ * _strlen - capitalizes all words of a string
  * @str: our pointer to char
  * Return: pointer to the result
  */
-char *cap_string(char *str)
+char _strlen(char *str)
 {
 	int i = 0;
 
