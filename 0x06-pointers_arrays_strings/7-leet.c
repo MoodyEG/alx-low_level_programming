@@ -18,7 +18,7 @@ char *leet(char *str)
 		{
 			if (*str == c[b] || *str == d[b])
 			{
-				*str = a[b]
+				*str = a[b];
 			}
 		}
 		str++;
