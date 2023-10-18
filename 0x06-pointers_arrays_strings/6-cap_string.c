@@ -8,26 +8,26 @@
 char *cap_string(char *str)
 {
 	int a = 1;
+	int i;
+	char c = *str;
 
-	while (str != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str == ' ' || str == '\t' || str == '\n' ||
-			str == ',' || str == ';' || str == '.' ||
-			str == '!' || str == '?' || str == '"' ||
-			str == '(' || str == ')' || str == '{' || str == '}')
+		if (c >= 'a' && c <= 'z' && a)
+		{
+			str[i] = c - 'a' + 'A';
+			a = 0;
+		}
+		else if (c == ' ' || c == '\t' || c == '\n' || c == ',' ||
+		c == ';' ||	c == '.' || c == '!' || c == '?' ||
+		c == '"' || c == '(' ||	c == ')' || c == '{' || c == '}')
 		{
 			a = 1;
-		}
-		else if (a && ((str >= 'a' && str <= 'z')))
-		{
-			str = str - 32;
-			a = 0;
 		}
 		else
 		{
 			a = 0;
 		}
-		str++;
 	}
 
 	return (str);
