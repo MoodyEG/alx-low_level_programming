@@ -5,7 +5,7 @@
  * @c: our pointer to char
  * Return: pointer to the result
  */
-char *rot13(char *c);
+char *rot13(char *c)
 {
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
