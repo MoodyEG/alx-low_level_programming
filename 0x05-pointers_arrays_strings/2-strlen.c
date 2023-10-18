@@ -1,30 +1,30 @@
 #include "main.h"
 
 /**
- * *cap_string - capitalizes all words of a string
- * @str: our pointer to char
+ * *cap_sing - capitalizes all words of a sing
+ * @s: our pointer to char
  * Return: pointer to the result
  */
 int _strlen(char *s)
 {
 	int i = 0;
 
-	if (str[i] >= 'a' && str[i] <= 'z')
+	if (s[i] >= 'a' && s[i] <= 'z')
 	{
-		str[i] = str[i]- 'a' + 'A';
+		s[i] = s[i]- 'a' + 'A';
 	}
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
-		str[i] == ',' || str[i] == ';' || str[i] == '.' ||
-		str[i] == '!' || str[i] == '?' || str[i] == '"' ||
-		str[i] == '(' || str[i] == ')' || str[i] == '{' ||
-		str[i] == '}')
+		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n' ||
+		s[i] == ',' || s[i] == ';' || s[i] == '.' ||
+		s[i] == '!' || s[i] == '?' || s[i] == '"' ||
+		s[i] == '(' || s[i] == ')' || s[i] == '{' ||
+		s[i] == '}')
 		{
 			i++;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (s[i] >= 'a' && s[i] <= 'z')
 			{
-				str[i] = str[i]- 'a' + 'A';
+				s[i] = s[i]- 'a' + 'A';
 			}
 			i--;
 		}
