@@ -7,8 +7,6 @@
  */
 char *leet(char *str)
 {
-	char a = *str;
-
 	while (*str)
 	{
 		if (*str == 'a' || *str == 'A')
@@ -24,5 +22,5 @@ char *leet(char *str)
 		str++;
 	}
 
-	return (a);
+	return (str);
 }
