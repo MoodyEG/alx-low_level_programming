@@ -1,15 +1,35 @@
 #include "main.h"
 
 /**
- * _strlen - a function that returns the length of a string
- * @s: pointer to our char
- * Return: length of a string
+ * *cap_string - capitalizes all words of a string
+ * @str: our pointer to char
+ * Return: pointer to the result
  */
-int _strlen(char *s)
+char *cap_string(char *str)
 {
-	int a = 0;
+	int i = 0;
 
-	while (*(s + a) != '\0')
-		a++;
-	return (a);
+	if (str[i] >= 'a' && str[i] <= 'z')
+	{
+		str[i] = str[i]- 'a' + 'A';
+	}
+	while (str[i] != '\0')
+	{
+		if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
+		str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+		str[i] == '!' || str[i] == '?' || str[i] == '"' ||
+		str[i] == '(' || str[i] == ')' || str[i] == '{' ||
+		str[i] == '}')
+		{
+			i++;
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i]- 'a' + 'A';
+			}
+			i--;
+		}
+		i++;
+	}
+
+	return (str);
 }
