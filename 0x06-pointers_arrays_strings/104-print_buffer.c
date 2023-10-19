@@ -26,7 +26,7 @@ void print_buffer(char *b, int size)
 		}
 		for (j = 0; j < 10; j++)
 		{
-			if (i + j < size && (b[i + j] >= 32 && b[i + j] <= 126))
+			if (i + j < size && b[i + j] >= 32 && b[i + j] <= 126)
 				printf("%c", b[i + j]);
 			else if (i + j < size)
 				printf(".");
