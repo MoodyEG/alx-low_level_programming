@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *infinite_add - encodes a string using rot13
+ * *infinite_add - adds two numbers
  * @n1: our pointer to char
  * @n2: our pointer to char
  * @r: our pointer to char
