@@ -30,8 +30,6 @@ void print_buffer(char *b, int size)
 				printf("%c", b[i + j]);
 			else if (i + j < size)
 				printf(".");
-			else
-				printf(" ");
 		}
 		printf("\n");
 	}
