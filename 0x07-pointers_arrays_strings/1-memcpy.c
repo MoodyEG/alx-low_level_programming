@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memcpyt -  copies memory area
+ * *_memcpy - copies memory area
  * @dest: The buffer to be printed.
  * @n: The number to fill
  * @src: main source
