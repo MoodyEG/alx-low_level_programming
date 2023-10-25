@@ -2,7 +2,7 @@
 
 /**
  * _pow_recursion - math power
- * @n: our main int
+ * @x: our main int
  * @y: our main power int
  * Return: returns the value of x raised to the power of y
  */
