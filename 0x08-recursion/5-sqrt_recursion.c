@@ -30,9 +30,9 @@ int _sqrt_recursion(int n)
 int math_square_root(int n, int i)
 {
 	if (i * i == n)
-	(
+	{
 		return (i);
-	)
+	}
 	else if (i * i > n)
 	{
 		return (-1);
