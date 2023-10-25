@@ -1,6 +1,27 @@
 #include "main.h"
 
 /**
+ * prime - check for prime numbers
+ * @n: our main int
+ * @i: our main int
+ * Return: 1 if prime, 0 otherwise
+ */
+int prime(int n, int i)
+{
+	if (n % i == 0)
+	{
+		if (n == i)
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (prime(n, i + 1));
+}
+/**
  * _sqrt_recursion - check for prime numbers
  * @n: our main int
  * Return: 1 if prime, 0 otherwise
@@ -22,25 +43,4 @@ int is_prime_number(int n)
 	{
 		return (prime(n, 2));
 	}
-}
-/**
- * prime - check for prime numbers
- * @n: our main int
- * @i: our main int
- * Return: 1 if prime, 0 otherwise
- */
-int prime(int n, int i)
-{
-	if (n % i == 0)
-	{
-		if (n == i)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (prime(n, i + 1));
 }
