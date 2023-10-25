@@ -22,7 +22,7 @@ int prime(int n, int i)
 	return (prime(n, i + 1));
 }
 /**
- * _sqrt_recursion - check for prime numbers
+ * is_prime_number - check for prime numbers
  * @n: our main int
  * Return: 1 if prime, 0 otherwise
  */
