@@ -4,19 +4,22 @@
  * main - main function
  * @argc: numbers of stuff added
  * @argv: the things added
- * Return: always 0 SUCCESS
+ * Return: always 0 SUCCESS, or 1 if error
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int mult = 0;
+	int i, j, mult;
 
-	for (i = 1; i < argc; i++)
+	if (argc != 3)
 	{
-		mult *= atoi(argv[i])
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", mult)
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	mult = i * j;
+	printf("%d\n", mult);
 
 	return (0);
 }
