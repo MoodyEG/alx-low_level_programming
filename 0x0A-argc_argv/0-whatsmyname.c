@@ -4,7 +4,6 @@
  * main - main function
  * @argc: numbers of stuff added
  * @argv: the things added
- *
  * Return: always 0 SUCCESS
  */
 int main(int argc, char *argv[])
