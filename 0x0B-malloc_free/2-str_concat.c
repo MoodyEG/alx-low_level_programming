@@ -3,19 +3,15 @@
 /**
  * str_concat - concatenates two strings.
  * @s1: The string to copy
- * @s1: The string to copy
+ * @s2: The string to copy
  * Return: pointer to string, or NULL if it fails
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j =0;
+	int i = 0, j = 0;
 	char *a;
 
-	if (s1 == NULL && s2 == NULL)
-	{
-		return (NULL);
-	}
 	while (s1[i] != '\0')
 	{
 		i++;
