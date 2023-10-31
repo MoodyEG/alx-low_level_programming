@@ -32,7 +32,7 @@ char **strtow(char *str)
 			words[word_count] = (char *)malloc(sizeof(char) * (j - i + 1));
 			if (words[word_count] == NULL)
 			{
-				for (;word_count >= 0; word_cound--)
+				for (;word_count >= 0; word_count--)
 					free(words[word_count]);
 				free(words);
 				return (NULL);
