@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	char *a;
 
 	a = malloc(b);
-	if (a == '\0')
+	if (a == NULL)
 	{
 		exit(98);
 	}
