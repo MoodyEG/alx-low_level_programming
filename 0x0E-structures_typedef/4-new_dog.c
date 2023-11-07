@@ -27,7 +27,7 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggy;
-	int i, dogname, dogowner;
+	int dogname, dogowner;
 
 	doggy = malloc(sizeof(*doggy));
 	if (doggy == NULL || !(name) || !(owner))
@@ -41,11 +41,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (dogowner = 0; owner[dogowner] != '\0'; dogowner++)
 	;
 	doggy->owner = malloc(dogowner + 1);
-	if (!(p_dog->name) || !(p_dog->owner))
+	if (!(doggy->name) || !(doggy->owner))
 	{
-		free(p_dog->owner);
-		free(p_dog->name);
-		free(p_dog);
+		free(doggy->owner);
+		free(doggy->name);
+		free(doggy);
 		return (NULL);
 	}
 	_strcpy(doggy->name, name);
