@@ -1,21 +1,82 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - executes a function given as a parameter
- * on each element of an array.
+ * int_index - searches for an integer
  * @array: the array
  * @size: size of the array
- * @action: a FUnCtIoN poniter
+ * @cmp: a FUnCtIoN poniter
  * Return: no return
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned long int i;
+	int i = 0;
 
-	if (array && size && action)
+	if (array && size && cmp)
 	{
-		for (i = 0; i < size; i++)
-		action(array[i]);
+		if (size <= 0)
+			return (-1);
+
+		while (i < size)
+		{
+			if (cmp(array[i]))
+				return (i);
+		}
 	}
+
+	return (-1)
+}
+#include "function_pointers.h"
+
+/**
+ *  * int_index - searches for an integer
+ *   * @array: the array
+ *    * @size: size of the array
+ *     * @cmp: a FUnCtIoN poniter
+ *      * Return: no return
+ *       */
+int int_index(int *array, int size, int (*cmp)(int))
+{
+		int i = 0;
+
+			if (array && size && cmp)
+			{
+						if (size <= 0)
+										return (-1);
+
+								while (i < size)
+								{
+												if (cmp(array[i]))
+																	return (i);
+								}
+			}
+
+				return (-1)
+}
+#include "function_pointers.h"
+
+/**
+ * int_index - searches for an integer
+ * @array: the array
+ * @size: size of the array
+ * @cmp: a FUnCtIoN poniter
+ * Return: no return
+ */
+int int_index(int *array, int size, int (*cmp)(int))
+{
+	int i = 0;
+
+	if (array && size && cmp)
+	{
+		if (size <= 0)
+			return (-1);
+
+		while (i < size)
+		{
+			if (cmp(array[i]))
+				return (i);
+		}
+	}
+
+	return (-1)
 }
 
