@@ -17,11 +17,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		a = va_arg(string, char*);
 		if (a)
-		{
 			printf("%s", a);
-			if (separator && i < n - 1)
-				printf("%s", separator);
-		}
+		else
+			printf("%s", str);
+		if (separator && i < n - 1)
+			printf("%s", separator);
 	}
 	va_end(string);
 	printf("\n");
