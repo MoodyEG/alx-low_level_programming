@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * print_listint - frees a list_t list.
+ * listint_len - frees a list_t list.
  * @h: the head od list
  * Return: the number of nodes
  */
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	listint_t *temp;
 	size_t i = 0;
