@@ -10,6 +10,8 @@ size_t print_listint_safe(const listint_t *head)
 	listint_t *slow, *fast;
 	size_t i = 0;
 
+	if (!head)
+		exit(98);
 	slow = (listint_t *)head;
 	fast = head->next;
 	while (fast != NULL && fast < slow)
