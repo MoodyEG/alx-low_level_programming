@@ -3,14 +3,14 @@
 /**
  * print_listint_safe - prints a listint_t linked list.
  * @head: the head of list
- * Return: the number of nodes in the list
+ * Return: the number of nodes in the list or 0 if NULL
  */
 size_t print_listint_safe(const listint_t *head)
 {
 	listint_t *slow, *fast;
 	size_t i = 0;
 
-	if (!head || !(head->next))
+	if (!head)
 		return (0);
 	slow = (listint_t *)head;
 	fast = head->next;
