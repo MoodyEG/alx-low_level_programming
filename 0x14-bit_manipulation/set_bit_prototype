@@ -8,11 +8,29 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int i;
+	unsigned long int i = 0;
+	int safe = 0, log[64];
 
-	if (index > 64)
+	while (i <= 63)
+	{
+		if (i == index)
+		{
+			*n = *n | 1;
+			safe = 1;
+			break;
+		}
+		log[i] = (*n & 1);
+		*n = *n >> 1;
+		i++;
+	}
+	if (safe == 0)
 		return (-1);
-	i = 1 << index;
-	*n = (*n | i);
+	while (i > 0)
+	{
+		*n = *n << 1;
+		*n = *n | log[i - 1];
+		i--;
+	}
+
 	return (1);
 }
