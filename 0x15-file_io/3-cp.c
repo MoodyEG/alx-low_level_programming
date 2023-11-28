@@ -49,7 +49,7 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	fdin = open(argv[1], O_RDONLY);
-	fdot = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0644);
+	fdot = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 	errchk(fdin, fdot, 0, 0, argv);
 	while (lenin == 1024)
 	{
@@ -62,7 +62,7 @@ int main(int argc, char **argv)
 	}
 	i = close(fdin);
 	j = close(fdot);
-	errchk(0, 0, i, j, argv);
+	errchk(fdin, fdot, i, j, argv);
 
 	return (0);
 }
