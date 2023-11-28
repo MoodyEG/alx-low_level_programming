@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 	}
 	if (j == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdot);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdin);
 		exit(100);
 	}
 
