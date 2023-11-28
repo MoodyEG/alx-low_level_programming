@@ -10,6 +10,8 @@
  */
 void errchk(int fdin, int fdot, ssize_t i, ssize_t j, char **argv)
 {
+	(void) j;
+	(void) i;
 	if (fdin == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -19,16 +21,6 @@ void errchk(int fdin, int fdot, ssize_t i, ssize_t j, char **argv)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
-	}
-	if (i == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdin);
-		exit(100);
-	}
-	if (j == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdot);
-		exit(100);
 	}
 }
 /**
@@ -62,7 +54,16 @@ int main(int argc, char **argv)
 	}
 	i = close(fdin);
 	j = close(fdot);
-	errchk(fdin, fdot, i, j, argv);
+	if (i == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdin);
+		exit(100);
+	}
+	if (j == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdot);
+		exit(100);
+	}
 
 	return (0);
 }
