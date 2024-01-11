@@ -3,7 +3,7 @@
 /**
  * delete_dnodeint_at_index -  deletes the node at index  of a linked list.
  * @head: our list
- * @idx: where to be deleted
+ * @index: where to be deleted
  * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
