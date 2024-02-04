@@ -12,10 +12,7 @@ void hash_table_print(const hash_table_t *ht)
 	char *a = "";
 
 	if (ht == NULL)
-	{
-		printf("{}\n");
 		return;
-	}
 	printf("{");
 	for (index = 0; index < ht->size; index++)
 	{
@@ -25,8 +22,6 @@ void hash_table_print(const hash_table_t *ht)
 			printf("%s'%s': '%s'", a, temp->key, temp->value);
 			a = ", ";
 			temp = temp->next;
-			if (temp)
-				printf(", ");
 		}
 	}
 	printf("}\n");
