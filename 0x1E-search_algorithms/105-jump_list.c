@@ -21,20 +21,16 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 
 	while (jump_node->index < size && jump_node->n < value)
 	{
-		printf("Value checked at index [%lu] = [%d]\n",
-		jump_node->index, jump_node->n);
 		node = jump_node;
 		for (i = 0; i < jump; i++)
 		{
 			if (jump_node->next != NULL)
 				jump_node = jump_node->next;
 			else
-			{
-				printf("Value checked at index [%lu] = [%d]\n",
-				jump_node->index, jump_node->n);
 				br = 1;
-			}
 		}
+		printf("Value checked at index [%lu] = [%d]\n",
+		jump_node->index, jump_node->n);
 		if (br)
 			break;
 	}
